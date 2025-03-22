@@ -1,114 +1,23 @@
-{
-    "list": null,
-    "data": [
-        {
-            "courseId": 1,
-            "code": "vsdg",
-            "courseNameFL": "shdbs",
-            "courseNameSL": "shdbs",
-            "categoryId": 2,
-            "quizeId": null,
-            "smsProfileId": 2,
-            "textMessageProfileId": 12,
-            "tags": [
-                "ag,asd"
-            ],
-            "isAutoAnnounce": false,
-            "description": null,
-            "units": [],
-            "hasQuiz": false,
-            "noOfTrainees": 0,
-            "trainerId": 38,
-            "searchedValue": null,
-            "totalDuration": 0,
-            "smsProfileVM": null,
-            "textMessageProfileVM": null,
-            "courseCategoryVM": {
-                "courseCategoryId": 2,
-                "code": null,
-                "courseCategoryNameFL": "wwwww",
-                "courseCategoryNameSL": "wwwww",
-                "parentId": null,
-                "description": null,
-                "parent": null,
-                "entryUserId": 29,
-                "entryUser": {
-                    "userId": 29,
-                    "personNameFL": "admin  watcharea-aramco02",
-                    "personNameSL": "admin  watcharea-aramco02",
-                    "personId": 0,
-                    "personTypeId": 0
-                },
-                "entryDate": "2025-02-15T12:16:52.2508836",
-                "entryDateString": null,
-                "lastUpdateUserId": null,
-                "lastUpdateUser": null,
-                "lastUpdateDate": null,
-                "lastUpdateDateString": null,
-                "isActive": true,
-                "isRemoved": false,
-                "enrolmentUser": {
-                    "userId": 29,
-                    "personNameFL": "admin  watcharea-aramco02",
-                    "personNameSL": "admin  watcharea-aramco02",
-                    "personId": 0,
-                    "personTypeId": 0
-                },
-                "tenantId": 1006
-            },
-            "countFiles": 0,
-            "countVideos": 0,
-            "totalProgress": 0,
-            "imageGUID": null,
-            "isStarted": false,
-            "scheduleManagerVM": null,
-            "trainerVM": null,
-            "entryUserId": 29,
-            "entryUser": {
-                "userId": 29,
-                "personNameFL": "admin  watcharea-aramco02",
-                "personNameSL": "admin  watcharea-aramco02",
-                "personId": 0,
-                "personTypeId": 0
-            },
-            "entryDate": "2025-03-10T13:20:08.8155252",
-            "entryDateString": null,
-            "lastUpdateUserId": null,
-            "lastUpdateUser": null,
-            "lastUpdateDate": null,
-            "lastUpdateDateString": null,
-            "isActive": true,
-            "isRemoved": false,
-            "enrolmentUser": {
-                "userId": 29,
-                "personNameFL": "admin  watcharea-aramco02",
-                "personNameSL": "admin  watcharea-aramco02",
-                "personId": 0,
-                "personTypeId": 0
-            },
-            "tenantId": 1006
-        }
-    ],
-    "pager": {
-        "totalItems": 1,
-        "currentPage": 1,
-        "pageSize": 10,
-        "pageIndex": 0,
-        "totalPages": 1,
-        "startPage": 1,
-        "endPage": 1,
-        "sortType": 0,
-        "sortField": null
-    },
-    "error": {
-        "errorMessageId": 0,
-        "errorMessageCode": null,
-        "errorMessageNameFL": null,
-        "errorMessageNameSL": null,
-        "isActive": false,
-        "isRemoved": false,
-        "isDisabled": false,
-        "lockTime": 0
-    },
-    "dtoKPI": null
-}
+I/flutter ( 1357): -----------------ELearning/private/course/search
+I/flutter ( 1357): {type: https://tools.ietf.org/html/rfc9110#section-15.5.1, title: One or more validation errors occurred., status: 400, errors: {id: [The value 'search' is not valid.]}, traceId: 00-0e70d221e98945dfd6f8ace08b4cddd9-2c2dd0ce5b3895fa-00}
+[Response: https://watcharea-aramco02.3i-vision.com/Way/ELearning/private/course/search] {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"id":["The value 'search' is not valid."]},"traceId":"00-0e70d221e98945dfd6f8ace08b4cddd9-2c2dd0ce5b3895fa-00"}
+[log] 400
+I/flutter ( 1357): {type: https://tools.ietf.org/html/rfc9110#section-15.5.1, title: One or more validation errors occurred., status: 400, errors: {id: [The value 'search' is not valid.]}, traceId: 00-0e70d221e98945dfd6f8ace08b4cddd9-2c2dd0ce5b3895fa-00}
+I/flutter ( 1357): Some thing went wrong
+I/flutter ( 1357): #0      DioHelper.handleResponse (package:simple_app/core/network/dio_helper.dart:282:7)
+I/flutter ( 1357): #1      DioHelper.getData (package:simple_app/core/network/dio_helper.dart:248:12)
+I/flutter ( 1357): <asynchronous suspension>
+I/flutter ( 1357): #2      CoursesRemoteDataSourceImpl.getCourses.<anonymous closure> (package:simple_app/features/courses/data/remoteData/courses_remote_data_source_impl.dart:19:37)
+I/flutter ( 1357): <asynchronous suspension>
+I/flutter ( 1357): #3      NetworkService.exceptionHandler (package:simple_app/core/baseRepo/base_repo.dart:14:20)
+I/flutter ( 1357): <asynchronous suspension>
+I/flutter ( 1357): #4      CoursesRemoteDataSourceImpl.getCourses (package:simple_app/features/courses/data/remoteData/courses_remote_data_source_impl.dart:17:12)
+I/flutter ( 1357): <asynchronous suspension>
+I/flutter ( 1357): #5      CoursesListRepoImpl.getCoursesList (package:simple_app/features/courses/data/repoImp/courses_list_repo_impl.dart:17:11)
+I/flutter ( 1357): <asynchronous suspension>
+I/flutter ( 1357): #6      GetCoursesListUsecase.getCoursesListUc (package:simple_app/features/courses/domain/usecase/get_courses_list_usecase.dart:8:46)
+I/flutter ( 1357): <asynchronous suspension>
+I/flutter ( 1357): #7      CourseListCubit.getC
+[log] {type: https://tools.ietf.org/html/rfc9110#section-15.5.1, title: One or more validation errors occurred., status: 400, errors: {id: [The value 'search' is not valid.]}, traceId: 00-0e70d221e98945dfd6f8ace08b4cddd9-2c2dd0ce5b3895fa-00}
+I/flutter ( 1357): mogss Some thing went wrong
+[log] {type: https://tools.ietf.org/html/rfc9110#section-15.5.1, title: One or more validation errors occurred., status: 400, errors: {id: [The value 'search' is not valid.]}, traceId: 00-0e70d221e98945dfd6f8ace08b4cddd9-2c2dd0ce5b3895fa-00}
